@@ -1,0 +1,27 @@
+https://image.ibb.co/m3ZbRb/programmer.png
+
+// Create data, Update data in table header
+
+// https://www.simbla.com/database-create-roles         --      EXAMPLE
+
+https://codepen.io/jonmilner/pen/bfkKF                  --      Tool Tips
+
+
+
+https://codepen.io/bradtraversy/full/odmVgN		--      Drag & Drop
+
+https://codepen.io/bradtraversy/pen/Bwapow 		--	DOM Items
+
+
+
+https://stackoverflow.com/questions/4444477/how-to-tell-if-a-string-contains-a-certain-character-in-javascript					-- Char Code
+
+https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_event_key_charcode4
+
+							-- Char Code compilator
+
+
+http://www.wingscorp.com/4dm1n/assets/js/dnd/
+
+
+http://isocra.github.io/TableDnD/

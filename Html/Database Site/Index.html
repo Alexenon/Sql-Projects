@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Query Desi</title>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<style>
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 800px;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  /*padding: 30px;*/
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 800px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+.wrapper{
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-auto-columns: minmax(20px, auto);
+  padding-top: 50px;
+  padding-left: 30px;
+}
+
+.Center-Statement{
+  padding-top: 30px;
+  text-align: center;
+}
+
+.column{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-auto-columns: minmax(20px, auto);
+}
+
+
+</style>
+</head>
+<body>
+
+
+
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">INFORMATII</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">NOUTATI</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACTE</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Informatii</a>
+        <a href="#" class="w3-bar-item w3-button">Petitii</a>
+        <a href="#" class="w3-bar-item w3-button">Alo, Primaria!</a>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+
+<div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'Create')" id="defaultOpen">Create</button>
+    <button class="tablinks" onclick="openCity(event, 'Insert')">Insert</button>
+    <button class="tablinks" onclick="openCity(event, 'Delete')">Delete</button>
+    <button class="tablinks" onclick="openCity(event, 'Options')">Options</button>
+</div>
+
+<!-- PAGE CONTENT -->
+<div class="w3-content" style="max-width:2000px;margin-top:45px">
+
+
+  <!-- CREATE -->
+  <div id="Create" class="tabcontent bg-dark text-white">
+    <div class="Center-Statement">
+      <h3>Create Table</h3>
+      <p class="w3-opacity">Here you can create a table</p>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">1</div>
+        <div class="col-sm-6">Output</div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 ">2</div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!--          
+        Coloana de 2
+        Coloana de 3
+
+
+        order-lg-12   -- col
+
+        justify-content center/start/end/around/between
+                      -->  
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div id="Insert" class="tabcontent">
+    <div class="Center-Statement">
+      <h3>Insert</h3>
+      <p>Insert is the capital of France.</p> 
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col col-sm-6">
+          <p>1</p>
+          <p>3</p>
+          <p>5</p>
+          <textarea style="width:250px; height:200px;font-family:Times New Roman;color:#003399;white-space:pre-wrap;" placeholder="
+          Ouput..."></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-sm-6">
+          <p>1</p>
+          <p>3</p>
+          <p>5</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <div id="Delete" class="tabcontent">
+    <div class="Center-Statement">
+     <h3>Delete</h3>
+      <p>Delete is the capital of Japan.</p>
+    </div>
+  </div>
+
+
+
+  <div id="Options" class="tabcontent">
+    <div class="Center-Statement">
+      <h3>Hello</h3>
+      <p>Delete is the capital of Japan.</p>
+    </div>
+  </div>
+
+
+
+</div>
+
+
+
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+  <div class="Center-Statement">
+      <h3>Create Table</h3>
+      <p class="w3-opacity">Here you can create a table</p>
+  </div>
+
+
+
+
+    <div class="wrapper">
+      <div class="first">
+        <div class="row">
+          <div class="col">
+            <h4>Column Name</h4>
+          </div>
+          <div class="col">
+            <input type="text" placeholder="Column name">
+          </div>
+          <div class="col">
+            
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h4>Data Type</h4>
+          </div>
+          <div class="col">
+            <div class="dropdown dropright">
+              <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">Data Type</button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+                <a class="dropdown-item" href="#">Link 3</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="dropdown dropright">
+              <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">Data Type</button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+                <a class="dropdown-item" href="#">Link 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            3
+          </div>
+        </div>
+      </div>
+      <div class="second">
+        <p class="w3-opacity">Here you can create a table</p>
+        <textarea style="width:250px; height:200px;" placeholder="Ouput..."></textarea>
+      </div>
+    </div>
+
+
+-->

@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Simba.css">
+    <title>Document</title>
+</head>
+<body>
+    
+<div class="container">
+    <div class="header-content">
+        <div class="select-view">
+            <div data-val="users" class="view-title"><i class="fa fa-user"></i><span>Users</span></div>
+            <div data-val="roles" class="view-title"><i class="fa fa-users"></i><span>Roles</span></div>
+            <div data-val="tables" class="view-title active"><i class="fa fa-table"></i><span>Tables</span></div>
+            <div data-val="triggers" class="view-title"><i class="fa fa-bell"></i><span>Triggers</span></div>
+            <div data-val="settings" class="view-title"><i class="fa fa-cog"></i><span>Settings</span></div>
+        </div>
+    </div>
+    <div class="body-content">
+        <div class="main-list">
+            <label>Tables</label>
+            <ul>            </ul>
+            <div id="createTable" class="createBtn"><i class="fa fa-plus"></i> Create new Table</div>
+        </div>
+        <ul class="tables-view-list">
+            <li>
+                <label>Primul Tabel</label>
+                <div class="controls">
+                    <i class="fa fa-pencil" id="t-edit" data-original-title="Edit"></i>
+                    <i class="fa fa-cog" id="t-settings" data-original-title="Settings"></i>
+                    <i class="fa fa-trash" id="t-delete" data-original-title="Delete"></i>
+                </div>
+            </li>
+            <li>
+                <label>Al doilea Tabel</label>
+                <div class="controls">
+                    <i class="fa fa-pencil" title="Edit" data-original-title="Edit"></i>
+                    <i class="fa fa-cog" title="Settings" data-original-title="Settings"></i>
+                    <i class="fa fa-trash" title="Delete" data-original-title="Delete"></i>
+                </div>
+            </li>
+            <li>
+                <label>Al treilea Tabel</label>
+                <div class="controls">
+                    <i class="fa fa-pencil" title="Edit" data-original-title="Edit"></i>
+                    <i class="fa fa-cog" title="Settings" data-original-title="Settings"></i>
+                    <i class="fa fa-trash" title="Delete" data-original-title="Delete"></i>
+                </div>
+            </li>
+        </ul>   
+    </div>
+
+
+    <div class="modal" id="t-modal">
+        <div class="modal-header">
+            <h4>Table settings</h4>
+            <button type="button" data-dismiss="modal" aria-hidden="true" class="close">×</button> 
+        </div>
+        <div class="modal-body">
+            <div class="tabbable">
+                <ul class="nav-tabs">
+                    <li onclick="openTab(event, 't-details')"><a href="#t-details">Details</a></li>
+                    <li><a href="#t-fields" onclick="openTab(event, 't-fields')">Fields</a></li>
+                    <li><a href="#t-permissions" onclick="openTab(event, 't-permissions')">Permissions</a></li>
+                    <li><a href="#t-triggers" onclick="openTab(event, 't-triggers')">Triggers</a></li>
+                </ul>
+            </div>
+            <div class="tab-content">
+                <div id="t-details" class="tab-pane">
+                    <div class="details-body">
+                        <h1>Details</h1>
+                    </div>
+                </div>
+                <div id="t-fields" class="tab-pane">
+                    <h1>Fields</h1>
+                </div>
+                <div id="t-permissions" class="tab-pane">
+                    <h1>Permissions</h1>
+                </div>
+                <div id="t-triggers" class="tab-pane">
+                    <h1>Triggers</h1>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button id="submit-table" type="submit" class="btn btn-success">Apply</button>
+            <button class="btn">Close</button>
+        </div>
+    </div>
+
+
+
+</div> 
+
+
+
+
+<script src="Simba.js"></script>
+</body>
+</html>
+

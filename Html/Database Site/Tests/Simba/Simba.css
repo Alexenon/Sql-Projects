@@ -1,0 +1,326 @@
+body{
+    background-color: rgb(34, 37, 39);
+}
+
+div{
+    display: block;
+}
+
+.container{
+    background-color: rgb(34, 37, 39);
+    color: rgb(199, 194, 186);
+    width: 100%;
+    height: 100%;
+}
+
+.header-content {
+    background-color: rgb(30, 34, 36);
+    width: 100%;
+    height: 70px;
+    overflow: hidden;
+    position: relative;
+}
+
+.header-content 
+.select-view 
+.view-title {
+    height: 100%;
+    float: left;
+    width: 96px;
+    font-family: 'Myriad Pro';
+    color: #aeaeae;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    transition: all .3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+
+.header-content .select-view .view-title i.fa {
+    font-size: 18px;
+    display: block;
+    padding: 17px 0 3px;
+    cursor: pointer;
+}
+
+
+.main-list {
+    border-color: #ebebeb;
+    border-bottom-width: 0px;
+    border-bottom-style: solid;
+    height: 40px;
+    margin: 20px 10px 20px;
+    position: relative;
+}
+
+.createBtn {
+    cursor: pointer;
+    float: right;
+    width: 230px;
+    height: 50px;
+    background-color: #6a1c43;
+    border: 1px #38061f;
+    border-radius: 4px;
+    font-size: 15px;
+    color: #fff;
+    font-family: Nexa, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 53px;
+    text-align: center;
+    margin-left: 10px;
+    margin-top: -10px;
+}
+
+.body-content .main-list label {
+    float: left;
+    font-size: 23px;
+    font-weight: 300;
+    margin-left: 15px;
+    cursor: default;
+}
+
+.tables-view-list {
+    height: calc(100% - 70px);
+    overflow-y: auto;
+    margin: 0 0 0 25px;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+li {
+    line-height: 20px;
+    list-style: none; 
+    display: list-item;
+}
+
+.tables-view-list li {
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #e1e1e1;
+    border-style: solid;
+    background-color:rgb(23, 26, 27);
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.12);
+    width: 268px;
+    height: 121px;
+    float: left;
+    overflow: hidden;
+    margin: 0 20px 20px 0;
+    padding: 10px;
+    cursor: pointer; 
+    box-sizing: border-box;
+    position: relative;
+}
+
+.tables-view-list li label {
+    color: rgb(202, 196, 188);
+    /* font-family: 'Nexa'; */
+    font-size: 20px;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    line-height: 23px;
+    cursor: pointer;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.tables-view-list li .controls {
+    float: right;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.tables-view-list li .controls i {
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 16px;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    color: #fff;
+    line-height: 21px;
+    margin: 4px;
+    border: 1px solid #ccc;
+    color: #ccc;
+    cursor: pointer;
+}
+
+li i.fa-pencil:hover {
+    background-color: rgb(178, 98, 10); 
+}
+
+li i.fa-cog:hover{
+    background-color: red;
+}
+
+li i.fa-trash:hover{
+    background-color: rgb(167, 28, 62); 
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    z-index: 991;
+    width: 560px;
+    margin-left: -280px;
+    /* background-color: #fff; */
+    /* border: 1px solid #999; */
+    /* border: 1px solid rgba(0,0,0,0.3); */
+    border-radius: 4px;
+}
+
+.modal-header{
+    /* background-image: linear-gradient(to right, rgb(120, 45, 76), rgb(167, 27, 62)); */
+    background: linear-gradient(to right, #963d62, #d7335b);
+    text-align: center;
+    border: none !important;
+    padding: 0;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    max-height: 53px;
+    position: relative;
+    min-height: 38px;
+}
+
+.modal-header h4 {
+    color: rgb(237, 235, 232);
+    font-family: Nexa, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    color: #fff;
+    line-height: 50px;
+    margin: 0;
+}
+
+
+.close {
+    color: rgb(237, 235, 232);
+    font-size: 32px;
+    font-weight: lighter;
+    opacity: 1;
+    height: 32px;
+    margin-top: 5px !important;
+    display: inline-block;
+    position: absolute;
+    right: 2px;
+    margin: 10px 10px 0px 10px;
+}
+
+
+/* Modal Body */
+.modal-body{
+    background-color: rgb(52, 53, 54);
+    min-height: 240px;
+    position: relative;
+    overflow-y: auto;
+    padding: 12px;
+    padding-top: 0px;
+}
+
+.tab-content{
+    background-color:rgb(58, 194, 115);
+}
+
+.tabbable{
+    background-color: darkgreen;
+}
+
+.nav-tabs{
+    margin-right: 3px;
+    margin-bottom: 0;
+    position: relative;
+    top: 1px;
+    display: block;
+    background-color: darkgreen;
+}
+
+.nav-tabs>li {
+    float: left;
+    background-color: darkgreen;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.nav-tabs li a {
+    min-width: 62px;
+    padding: 11px 20px !important;
+    text-align: center;
+    border-radius: 0!important;
+    margin-right: -1px;
+    position: relative;
+    color:rgb(181, 174, 164);
+    text-decoration: none;
+}
+
+/* Modal Footer */
+.modal-footer{
+    background-color: cyan;
+    padding: 12px 12px 12px;
+    border: 0px;
+    background: #f8f8f8;
+    z-index: 2;
+    position: relative;
+    border-radius: 0 0 6px 6px;
+    margin-bottom: 0;
+    text-align: right;
+    background-color: rgb(52, 53, 54);
+}
+
+#submit-table, .btn{
+    display: inline-block; 
+    align-items: flex-start;
+    padding: 8px 12px 7px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    min-width: 70px;
+    position:relative;
+    border-radius: 4px;
+    border-width: 0px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+#submit-table{
+    background-color: rgb(70, 95, 141);
+}
+
+.btn{
+    background-color: darkgray;
+    margin-left: 5px;
+}
+
+
+
+/* The Modal Divisons */
+.tab-pane{
+    padding: 20px !important;
+    border: 0px;
+    border-radius: 0 0 6px 6px;
+}
+
+#t-details{
+    min-height: 200px;
+}
+
+
+#t-fields, #t-triggers, #t-permissions{
+    display: none;
+}
+
